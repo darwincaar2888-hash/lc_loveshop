@@ -1,26 +1,80 @@
 <!doctype html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>L&C Loveshop</title>
-  <style>
-    body { margin:0; font-family: Arial; background:#111; color:#fff; }
-    header { background:#ff4fa3; padding:40px; text-align:center; }
-    h1 { margin:0; }
-    section { padding:20px; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>L&C Loveshop</title>
+
+<style>
+body { margin:0; font-family: Arial; background:#111; color:#fff; }
+header { background:#ff4fa3; padding:40px; text-align:center; }
+h1 { margin:0; }
+section { padding:20px; }
+
+.productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+}
+
+.card {
+  background:#1a1a1a;
+  padding:10px;
+  border-radius:10px;
+  text-align:center;
+}
+
+.card img {
+  width:100%;
+  border-radius:10px;
+}
+
+.btn {
+  display:inline-block;
+  margin-top:10px;
+  background:#ff4fa3;
+  padding:8px 12px;
+  border-radius:6px;
+  text-decoration:none;
+  color:white;
+}
+</style>
 </head>
+
 <body>
 
 <header>
-  <h1>L&C Loveshop</h1>
-  <p>Tienda online para adultos 🔥</p>
+<h1>L&C Loveshop</h1>
+<p>Tienda online para adultos 🔥</p>
 </header>
 
 <section>
-  <h2>Bienvenido</h2>
-  <p>Tu tienda íntima online.</p>
+<h2>Productos</h2>
+
+<div class="productos">
+
+<div class="card">
+<img src="https://via.placeholder.com/200x200" alt="">
+<h3>Producto 1</h3>
+<p>$10</p>
+<a class="btn" href="#">Comprar</a>
+</div>
+
+<div class="card">
+<img src="https://via.placeholder.com/200x200" alt="">
+<h3>Producto 2</h3>
+<p>$15</p>
+<a class="btn" href="#">Comprar</a>
+</div>
+
+<div class="card">
+<img src="https://via.placeholder.com/200x200" alt="">
+<h3>Producto 3</h3>
+<p>$20</p>
+<a class="btn" href="#">Comprar</a>
+</div>
+
+</div>
 </section>
 
 </body>
